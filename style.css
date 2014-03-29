@@ -1,5 +1,8 @@
 body {
 	font-family: sans-serif;
+	color: #5C5C5C;
+	margin: 0;
+	padding: 0;
 }
 
 footer {
@@ -8,42 +11,107 @@ footer {
 	height: 25%;
 }
 
-.logo {
-	width: 50px;
-	height: 50px;
-	border-radius: 25px;
-	background-color: black
-}
-
-.logo p {
-	font-family: courier;
-	color: white;
-	vertical-align: middle;
-	text-align: center;
-	font-size: 2.3443125em;
-}
-
-/* Main content */
-.left-content {
+footer h4 {
+	border-left: 5px solid lightgray;
+	padding-left: 1%;
+	margin-left: 2%;
+	color: LightGray;
 	float: left;
+	width: 20%;
+}
+
+article {
+	padding-left: 14%;
+	padding-right: 14%;
+	padding-bottom: 15%;
+	padding-top: 5%;
+	border-bottom: 1px solid lightgray;
+}
+
+
+
+.right-story {
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+
+/****************************************/
+/* Main content */
+/****************************************/
+/* Left content */
+.left-content-container {
+	float: left;
+	width: 60%;
+}
+
+.left-content {
+	/*float: left;
+	width: 58%;*/
 	margin-left: 120px;
-	width: 58%;
 	border-right: 1px solid lightgray;
 	border-left: 1px solid lightgray;
 }
 
-.right-content {
-	float: left;
-	width: 27%;
-	margin-right: 60px;
+.main-title {
+	font-size: 3em;
+	font-weight: bold;
+	color: black;
 }
-
 
 .article-title {
 	font-family: 'Roboto', sans-serif;
+	color: black;
 }
 
+.article-title:hover {
+	color: orange;
+}
+
+.author {
+	color: orange;
+}
+
+/* Right content */
+.right-content-container {
+	float: left;
+	width: 30%;
+}
+.right-content {
+	/*float: left;
+	width: 27%;*/
+	margin-right: 60px;
+}
+
+.right-story {
+	margin-bottom: 15%;
+}
+
+.right-title:hover {
+	color: #0066CC;
+}
+
+.thin-title {
+	font-weight: lighter;
+	color: DarkGray;
+}
+
+.right-story-description {
+	font-weight: lighter;
+}
+
+.author-right {
+	font-size: 0.75em;
+	font-weight: bold;
+}
+
+.author-right:hover {
+	color: #0066CC;
+}
+
+/****************************************/
 /* Left static vertical navigation bar */
+/****************************************/
 
 .left-nav {
 	position: fixed;
@@ -52,10 +120,14 @@ footer {
 	height: 70vh;
 	left: 0px;
 	top: 0px;
+	font-size: 0.85em;
 }
 
 .left-nav li {
 	list-style: none;
+	text-align: right;
+	margin-right: 15px;
+	line-height: 2em;
 }
 
 .left-nav a {
@@ -67,7 +139,30 @@ footer {
 	color: black;
 }
 
+/* Circle logo on the left */
+.logo {
+	width: 40px;
+	height: 40px;
+	border-radius: 25px;
+	background-color: black;
+	float: right;
+	margin-bottom: 50%;
+}
+
+.logo-inner-circle {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background-color: transparent;
+	border: 3px solid white;
+	margin: 0px auto;
+    position: relative;
+    top: 12%; 
+}
+
+/****************************************/
 /* Right static vertical navigation bar */
+/****************************************/
 .right-nav {
 	top: 0px;
 	right: 0px;
@@ -78,13 +173,18 @@ footer {
 	border-left: 1px solid lightgray;
 }
 
-.right-nav li {
-	list-style: none;
-	padding: 0% 200% 0% 0%;
+.right-nav div {
+	margin: 0px auto;
 }
 
+.right-nav li {
+	list-style: none;
+}
+
+/* Rotate right menu text vertically */
 .rotate {
-	-webkit-transform: rotate(90deg);	
+	-webkit-transform: rotate(90deg);
+	margin: 50% 0%;	
 }
 
 .rotate a {
@@ -93,17 +193,42 @@ footer {
 	font-weight: bold;
 }
 
-.circle {
-	width: 36px;
-	height: 36px;
-	border-radius: 18px;
-	background-color: black;
+/* Make right menu circle shape */
+.right-circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	border: 3px solid black;
+	background-color: white;
 }
 
 .down-triangle { 
-   width: 0; 
-   height: 0;
-   border-top: 5px solid white;
-   border-left: 5px solid transparent; 
-   border-right: 5px solid transparent; 
+   	width: 0px;
+    height: 0px;
+    border-top: 5px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin: 0px auto;
+    position: relative;
+    top: 40%; 
+}
+
+/****************************************/
+/* Footer classes */
+/****************************************/
+.footer-col {
+	color: LightGray;
+	float: left;
+	width: 30%;
+}
+
+.footer-col-li {
+	list-style: none;
+	padding: 2% 0;
+}
+
+.copyright {
+	clear: both;
+	color: LightGray;
+	font-size: 0.25em;
 }
